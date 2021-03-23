@@ -1,0 +1,51 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 张天鹏
+ * @Date: 2021-03-23 14:10:41
+ * @LastEditors: 张天鹏
+ * @LastEditTime: 2021-03-23 14:18:17
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>缓存全局变量</title>
+</head>
+<body>
+  <input type="button" value="btn" id="btn1">
+  <input type="button" value="btn" id="btn2">
+  <input type="button" value="btn" id="btn3">
+  <input type="button" value="btn" id="btn4">
+  <p>1111</p>
+  <input type="button" value="btn" id="btn5">
+  <input type="button" value="btn" id="btn6">
+  <p>222</p>
+  <input type="button" value="btn" id="btn7">
+  <input type="button" value="btn" id="btn8">
+  <p>333</p>
+  <input type="button" value="btn" id="btn9">
+  <input type="button" value="btn" id="btn10">
+
+  <script>
+    function getBtn() {
+      let obj1 = document.getElementById('btn1')
+      let obj3 = document.getElementById('btn3')
+      let obj5 = document.getElementById('btn5')
+      let obj7 = document.getElementById('btn7')
+      let obj9 = document.getElementById('btn9')
+    }
+
+    function getBtn2() {
+      let obj = document
+      let obj2 = obj.getElementById('btn2')
+      let obj4 = obj.getElementById('btn4')
+      let obj6 = obj.getElementById('btn6')
+      let obj8 = obj.getElementById('btn8')
+      let obj10 =obj.getElementById('btn10')
+    }
+  </script>
+</body>
+</html>

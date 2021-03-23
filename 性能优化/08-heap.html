@@ -1,0 +1,35 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 张天鹏
+ * @Date: 2021-03-23 10:38:38
+ * @LastEditors: 张天鹏
+ * @LastEditTime: 2021-03-23 10:47:11
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>堆快照监控内存</title>
+</head>
+<body>
+  <button id="btn">add</button>
+
+  <script>
+    var temEle
+
+    function fn() {
+      let ul = document.createElement('ul')
+      for (var i =0;i<10;i++) {
+        let li = document.createElement('li')
+        ul.appendChild(li)
+      }
+      temEle = ul
+    }
+
+    document.getElementById('btn').addEventListener('click', fn)
+  </script>
+</body>
+</html>
